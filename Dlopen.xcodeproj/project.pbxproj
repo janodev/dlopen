@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A9533FA206A4358002FBA50 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9533F9206A4358002FBA50 /* CircleView.swift */; };
+		3A9533FC206A4E6C002FBA50 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9533FB206A4E6C002FBA50 /* View.swift */; };
+		3A98CC272069A40200C881E2 /* AirshipAppExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBBE206998C000C881E2 /* AirshipAppExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC282069A40200C881E2 /* AirshipKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD3206998C200C881E2 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC292069A40200C881E2 /* Bolts.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCE206998C100C881E2 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2A2069A40200C881E2 /* BoltsSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC3206998C000C881E2 /* BoltsSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2B2069A40200C881E2 /* Braintree3DSecure.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC0206998C000C881E2 /* Braintree3DSecure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2C2069A40200C881E2 /* BraintreeAmericanExpress.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBBF206998C000C881E2 /* BraintreeAmericanExpress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2D2069A40200C881E2 /* BraintreeApplePay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD0206998C200C881E2 /* BraintreeApplePay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2E2069A40200C881E2 /* BraintreeCard.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC9206998C100C881E2 /* BraintreeCard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC2F2069A40200C881E2 /* BraintreeCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDD206998C300C881E2 /* BraintreeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC302069A40200C881E2 /* BraintreeDataCollector.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC7206998C100C881E2 /* BraintreeDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC312069A40200C881E2 /* BraintreePaymentFlow.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCD206998C100C881E2 /* BraintreePaymentFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC322069A40200C881E2 /* BraintreePayPal.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD1206998C200C881E2 /* BraintreePayPal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC332069A40200C881E2 /* BraintreeUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC1206998C000C881E2 /* BraintreeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC342069A40200C881E2 /* BraintreeUnionPay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC2206998C000C881E2 /* BraintreeUnionPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC352069A40200C881E2 /* BraintreeVenmo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC6206998C100C881E2 /* BraintreeVenmo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC362069A40200C881E2 /* FacebookCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD7206998C200C881E2 /* FacebookCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC372069A40200C881E2 /* FacebookLogin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC4206998C100C881E2 /* FacebookLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC382069A40200C881E2 /* FacebookShare.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBBD206998C000C881E2 /* FacebookShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC392069A40200C881E2 /* FBSDKCoreKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDE206998C300C881E2 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3A2069A40200C881E2 /* FBSDKLoginKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD2206998C200C881E2 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3B2069A40200C881E2 /* FBSDKPlacesKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCB206998C100C881E2 /* FBSDKPlacesKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3C2069A40200C881E2 /* FBSDKShareKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCA206998C100C881E2 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3D2069A40200C881E2 /* Koloda.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC5206998C100C881E2 /* Koloda.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3E2069A40200C881E2 /* Locksmith.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDA206998C300C881E2 /* Locksmith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC3F2069A40200C881E2 /* MMMaterialDesignSpinner.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBC8206998C100C881E2 /* MMMaterialDesignSpinner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC402069A40200C881E2 /* NVActivityIndicatorView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD5206998C200C881E2 /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC412069A40200C881E2 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD6206998C200C881E2 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC422069A40200C881E2 /* PayPalDataCollector.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCF206998C100C881E2 /* PayPalDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC432069A40200C881E2 /* PayPalOneTouch.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDF206998C300C881E2 /* PayPalOneTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC442069A40200C881E2 /* PayPalUtils.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBCC206998C100C881E2 /* PayPalUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC452069A40200C881E2 /* pop.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDC206998C300C881E2 /* pop.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC462069A40200C881E2 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD8206998C200C881E2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC472069A40200C881E2 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD9206998C300C881E2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC482069A40200C881E2 /* Stripe.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBDB206998C300C881E2 /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A98CC492069A40200C881E2 /* SVProgressHUD.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3A98CBD4206998C200C881E2 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AEEEB0320697EC700B91A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEEB0220697EC700B91A2D /* AppDelegate.swift */; };
+		3AEEEB0520697EC700B91A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEEEB0420697EC700B91A2D /* ViewController.swift */; };
+		3AEEEB0A20697EC700B91A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AEEEB0920697EC700B91A2D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A98CC262069A3F900C881E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A98CC272069A40200C881E2 /* AirshipAppExtensions.framework in CopyFiles */,
+				3A98CC282069A40200C881E2 /* AirshipKit.framework in CopyFiles */,
+				3A98CC292069A40200C881E2 /* Bolts.framework in CopyFiles */,
+				3A98CC2A2069A40200C881E2 /* BoltsSwift.framework in CopyFiles */,
+				3A98CC2B2069A40200C881E2 /* Braintree3DSecure.framework in CopyFiles */,
+				3A98CC2C2069A40200C881E2 /* BraintreeAmericanExpress.framework in CopyFiles */,
+				3A98CC2D2069A40200C881E2 /* BraintreeApplePay.framework in CopyFiles */,
+				3A98CC2E2069A40200C881E2 /* BraintreeCard.framework in CopyFiles */,
+				3A98CC2F2069A40200C881E2 /* BraintreeCore.framework in CopyFiles */,
+				3A98CC302069A40200C881E2 /* BraintreeDataCollector.framework in CopyFiles */,
+				3A98CC312069A40200C881E2 /* BraintreePaymentFlow.framework in CopyFiles */,
+				3A98CC322069A40200C881E2 /* BraintreePayPal.framework in CopyFiles */,
+				3A98CC332069A40200C881E2 /* BraintreeUI.framework in CopyFiles */,
+				3A98CC342069A40200C881E2 /* BraintreeUnionPay.framework in CopyFiles */,
+				3A98CC352069A40200C881E2 /* BraintreeVenmo.framework in CopyFiles */,
+				3A98CC362069A40200C881E2 /* FacebookCore.framework in CopyFiles */,
+				3A98CC372069A40200C881E2 /* FacebookLogin.framework in CopyFiles */,
+				3A98CC382069A40200C881E2 /* FacebookShare.framework in CopyFiles */,
+				3A98CC392069A40200C881E2 /* FBSDKCoreKit.framework in CopyFiles */,
+				3A98CC3A2069A40200C881E2 /* FBSDKLoginKit.framework in CopyFiles */,
+				3A98CC3B2069A40200C881E2 /* FBSDKPlacesKit.framework in CopyFiles */,
+				3A98CC3C2069A40200C881E2 /* FBSDKShareKit.framework in CopyFiles */,
+				3A98CC3D2069A40200C881E2 /* Koloda.framework in CopyFiles */,
+				3A98CC3E2069A40200C881E2 /* Locksmith.framework in CopyFiles */,
+				3A98CC3F2069A40200C881E2 /* MMMaterialDesignSpinner.framework in CopyFiles */,
+				3A98CC402069A40200C881E2 /* NVActivityIndicatorView.framework in CopyFiles */,
+				3A98CC412069A40200C881E2 /* ObjectMapper.framework in CopyFiles */,
+				3A98CC422069A40200C881E2 /* PayPalDataCollector.framework in CopyFiles */,
+				3A98CC432069A40200C881E2 /* PayPalOneTouch.framework in CopyFiles */,
+				3A98CC442069A40200C881E2 /* PayPalUtils.framework in CopyFiles */,
+				3A98CC452069A40200C881E2 /* pop.framework in CopyFiles */,
+				3A98CC462069A40200C881E2 /* Realm.framework in CopyFiles */,
+				3A98CC472069A40200C881E2 /* RealmSwift.framework in CopyFiles */,
+				3A98CC482069A40200C881E2 /* Stripe.framework in CopyFiles */,
+				3A98CC492069A40200C881E2 /* SVProgressHUD.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A9533F9206A4358002FBA50 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		3A9533FB206A4E6C002FBA50 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3A9533FD206A85D5002FBA50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A9533FE206A86B1002FBA50 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3A9533FF206A86B1002FBA50 /* carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = carthage.sh; sourceTree = "<group>"; };
+		3A98CBBD206998C000C881E2 /* FacebookShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookShare.framework; path = Carthage/Build/iOS/FacebookShare.framework; sourceTree = "<group>"; };
+		3A98CBBE206998C000C881E2 /* AirshipAppExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipAppExtensions.framework; path = Carthage/Build/iOS/AirshipAppExtensions.framework; sourceTree = "<group>"; };
+		3A98CBBF206998C000C881E2 /* BraintreeAmericanExpress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeAmericanExpress.framework; path = Carthage/Build/iOS/BraintreeAmericanExpress.framework; sourceTree = "<group>"; };
+		3A98CBC0206998C000C881E2 /* Braintree3DSecure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Braintree3DSecure.framework; path = Carthage/Build/iOS/Braintree3DSecure.framework; sourceTree = "<group>"; };
+		3A98CBC1206998C000C881E2 /* BraintreeUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeUI.framework; path = Carthage/Build/iOS/BraintreeUI.framework; sourceTree = "<group>"; };
+		3A98CBC2206998C000C881E2 /* BraintreeUnionPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeUnionPay.framework; path = Carthage/Build/iOS/BraintreeUnionPay.framework; sourceTree = "<group>"; };
+		3A98CBC3206998C000C881E2 /* BoltsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BoltsSwift.framework; path = Carthage/Build/iOS/BoltsSwift.framework; sourceTree = "<group>"; };
+		3A98CBC4206998C100C881E2 /* FacebookLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookLogin.framework; path = Carthage/Build/iOS/FacebookLogin.framework; sourceTree = "<group>"; };
+		3A98CBC5206998C100C881E2 /* Koloda.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Koloda.framework; path = Carthage/Build/iOS/Koloda.framework; sourceTree = "<group>"; };
+		3A98CBC6206998C100C881E2 /* BraintreeVenmo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeVenmo.framework; path = Carthage/Build/iOS/BraintreeVenmo.framework; sourceTree = "<group>"; };
+		3A98CBC7206998C100C881E2 /* BraintreeDataCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeDataCollector.framework; path = Carthage/Build/iOS/BraintreeDataCollector.framework; sourceTree = "<group>"; };
+		3A98CBC8206998C100C881E2 /* MMMaterialDesignSpinner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MMMaterialDesignSpinner.framework; path = Carthage/Build/iOS/MMMaterialDesignSpinner.framework; sourceTree = "<group>"; };
+		3A98CBC9206998C100C881E2 /* BraintreeCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeCard.framework; path = Carthage/Build/iOS/BraintreeCard.framework; sourceTree = "<group>"; };
+		3A98CBCA206998C100C881E2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = Carthage/Build/iOS/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		3A98CBCB206998C100C881E2 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = Carthage/Build/iOS/FBSDKPlacesKit.framework; sourceTree = "<group>"; };
+		3A98CBCC206998C100C881E2 /* PayPalUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalUtils.framework; path = Carthage/Build/iOS/PayPalUtils.framework; sourceTree = "<group>"; };
+		3A98CBCD206998C100C881E2 /* BraintreePaymentFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreePaymentFlow.framework; path = Carthage/Build/iOS/BraintreePaymentFlow.framework; sourceTree = "<group>"; };
+		3A98CBCE206998C100C881E2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Carthage/Build/iOS/Bolts.framework; sourceTree = "<group>"; };
+		3A98CBCF206998C100C881E2 /* PayPalDataCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalDataCollector.framework; path = Carthage/Build/iOS/PayPalDataCollector.framework; sourceTree = "<group>"; };
+		3A98CBD0206998C200C881E2 /* BraintreeApplePay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeApplePay.framework; path = Carthage/Build/iOS/BraintreeApplePay.framework; sourceTree = "<group>"; };
+		3A98CBD1206998C200C881E2 /* BraintreePayPal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreePayPal.framework; path = Carthage/Build/iOS/BraintreePayPal.framework; sourceTree = "<group>"; };
+		3A98CBD2206998C200C881E2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Carthage/Build/iOS/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		3A98CBD3206998C200C881E2 /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = Carthage/Build/iOS/AirshipKit.framework; sourceTree = "<group>"; };
+		3A98CBD4206998C200C881E2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		3A98CBD5206998C200C881E2 /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NVActivityIndicatorView.framework; path = Carthage/Build/iOS/NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		3A98CBD6206998C200C881E2 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		3A98CBD7206998C200C881E2 /* FacebookCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookCore.framework; path = Carthage/Build/iOS/FacebookCore.framework; sourceTree = "<group>"; };
+		3A98CBD8206998C200C881E2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		3A98CBD9206998C300C881E2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		3A98CBDA206998C300C881E2 /* Locksmith.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Locksmith.framework; path = Carthage/Build/iOS/Locksmith.framework; sourceTree = "<group>"; };
+		3A98CBDB206998C300C881E2 /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Stripe.framework; path = Carthage/Build/iOS/Stripe.framework; sourceTree = "<group>"; };
+		3A98CBDC206998C300C881E2 /* pop.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = pop.framework; path = Carthage/Build/iOS/pop.framework; sourceTree = "<group>"; };
+		3A98CBDD206998C300C881E2 /* BraintreeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BraintreeCore.framework; path = Carthage/Build/iOS/BraintreeCore.framework; sourceTree = "<group>"; };
+		3A98CBDE206998C300C881E2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Carthage/Build/iOS/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		3A98CBDF206998C300C881E2 /* PayPalOneTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayPalOneTouch.framework; path = Carthage/Build/iOS/PayPalOneTouch.framework; sourceTree = "<group>"; };
+		3AEEEAFF20697EC700B91A2D /* Dlopen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dlopen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEEEB0220697EC700B91A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AEEEB0420697EC700B91A2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AEEEB0920697EC700B91A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AEEEB0E20697EC700B91A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AEEEAFC20697EC700B91A2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AEEEAF620697EC700B91A2D = {
+			isa = PBXGroup;
+			children = (
+				3AEEEB982069985C00B91A2D /* Frameworks */,
+				3AEEEB1520697ED200B91A2D /* targets */,
+				3AEEEB1420697ECD00B91A2D /* sources */,
+				3AEEEB0020697EC700B91A2D /* Products */,
+				3A9533FE206A86B1002FBA50 /* Cartfile */,
+				3A9533FF206A86B1002FBA50 /* carthage.sh */,
+				3A9533FD206A85D5002FBA50 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		3AEEEB0020697EC700B91A2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEEAFF20697EC700B91A2D /* Dlopen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AEEEB1420697ECD00B91A2D /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEEB1620697EDA00B91A2D /* main */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		3AEEEB1520697ED200B91A2D /* targets */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEEB1720697EDF00B91A2D /* main */,
+			);
+			path = targets;
+			sourceTree = "<group>";
+		};
+		3AEEEB1620697EDA00B91A2D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEEB0220697EC700B91A2D /* AppDelegate.swift */,
+				3AEEEB0420697EC700B91A2D /* ViewController.swift */,
+				3AEEEB0920697EC700B91A2D /* Assets.xcassets */,
+				3A9533F9206A4358002FBA50 /* CircleView.swift */,
+				3A9533FB206A4E6C002FBA50 /* View.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3AEEEB1720697EDF00B91A2D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3AEEEB0E20697EC700B91A2D /* Info.plist */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3AEEEB982069985C00B91A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A98CBBE206998C000C881E2 /* AirshipAppExtensions.framework */,
+				3A98CBD3206998C200C881E2 /* AirshipKit.framework */,
+				3A98CBCE206998C100C881E2 /* Bolts.framework */,
+				3A98CBC3206998C000C881E2 /* BoltsSwift.framework */,
+				3A98CBC0206998C000C881E2 /* Braintree3DSecure.framework */,
+				3A98CBBF206998C000C881E2 /* BraintreeAmericanExpress.framework */,
+				3A98CBD0206998C200C881E2 /* BraintreeApplePay.framework */,
+				3A98CBC9206998C100C881E2 /* BraintreeCard.framework */,
+				3A98CBDD206998C300C881E2 /* BraintreeCore.framework */,
+				3A98CBC7206998C100C881E2 /* BraintreeDataCollector.framework */,
+				3A98CBCD206998C100C881E2 /* BraintreePaymentFlow.framework */,
+				3A98CBD1206998C200C881E2 /* BraintreePayPal.framework */,
+				3A98CBC1206998C000C881E2 /* BraintreeUI.framework */,
+				3A98CBC2206998C000C881E2 /* BraintreeUnionPay.framework */,
+				3A98CBC6206998C100C881E2 /* BraintreeVenmo.framework */,
+				3A98CBD7206998C200C881E2 /* FacebookCore.framework */,
+				3A98CBC4206998C100C881E2 /* FacebookLogin.framework */,
+				3A98CBBD206998C000C881E2 /* FacebookShare.framework */,
+				3A98CBDE206998C300C881E2 /* FBSDKCoreKit.framework */,
+				3A98CBD2206998C200C881E2 /* FBSDKLoginKit.framework */,
+				3A98CBCB206998C100C881E2 /* FBSDKPlacesKit.framework */,
+				3A98CBCA206998C100C881E2 /* FBSDKShareKit.framework */,
+				3A98CBC5206998C100C881E2 /* Koloda.framework */,
+				3A98CBDA206998C300C881E2 /* Locksmith.framework */,
+				3A98CBC8206998C100C881E2 /* MMMaterialDesignSpinner.framework */,
+				3A98CBD5206998C200C881E2 /* NVActivityIndicatorView.framework */,
+				3A98CBD6206998C200C881E2 /* ObjectMapper.framework */,
+				3A98CBCF206998C100C881E2 /* PayPalDataCollector.framework */,
+				3A98CBDF206998C300C881E2 /* PayPalOneTouch.framework */,
+				3A98CBCC206998C100C881E2 /* PayPalUtils.framework */,
+				3A98CBDC206998C300C881E2 /* pop.framework */,
+				3A98CBD8206998C200C881E2 /* Realm.framework */,
+				3A98CBD9206998C300C881E2 /* RealmSwift.framework */,
+				3A98CBDB206998C300C881E2 /* Stripe.framework */,
+				3A98CBD4206998C200C881E2 /* SVProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AEEEAFE20697EC700B91A2D /* Dlopen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AEEEB1120697EC700B91A2D /* Build configuration list for PBXNativeTarget "Dlopen" */;
+			buildPhases = (
+				3AEEEAFB20697EC700B91A2D /* Sources */,
+				3AEEEAFC20697EC700B91A2D /* Frameworks */,
+				3AEEEAFD20697EC700B91A2D /* Resources */,
+				3A98CC262069A3F900C881E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dlopen;
+			productName = Dlopen;
+			productReference = 3AEEEAFF20697EC700B91A2D /* Dlopen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AEEEAF720697EC700B91A2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Me;
+				TargetAttributes = {
+					3AEEEAFE20697EC700B91A2D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3AEEEAFA20697EC700B91A2D /* Build configuration list for PBXProject "Dlopen" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AEEEAF620697EC700B91A2D;
+			productRefGroup = 3AEEEB0020697EC700B91A2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AEEEAFE20697EC700B91A2D /* Dlopen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AEEEAFD20697EC700B91A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEEEB0A20697EC700B91A2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AEEEAFB20697EC700B91A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9533FC206A4E6C002FBA50 /* View.swift in Sources */,
+				3A9533FA206A4358002FBA50 /* CircleView.swift in Sources */,
+				3AEEEB0520697EC700B91A2D /* ViewController.swift in Sources */,
+				3AEEEB0320697EC700B91A2D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3AEEEB0F20697EC700B91A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AEEEB1020697EC700B91A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AEEEB1220697EC700B91A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: alejandro.ramirez@poqcommerce.com (M2BEM84LUM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RPRLABY6AE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/targets/main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poq.foobartennieltenniel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AEEEB1320697EC700B91A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: alejandro.ramirez@poqcommerce.com (M2BEM84LUM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RPRLABY6AE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/targets/main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poq.foobartennieltenniel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AEEEAFA20697EC700B91A2D /* Build configuration list for PBXProject "Dlopen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEEEB0F20697EC700B91A2D /* Debug */,
+				3AEEEB1020697EC700B91A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AEEEB1120697EC700B91A2D /* Build configuration list for PBXNativeTarget "Dlopen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AEEEB1220697EC700B91A2D /* Debug */,
+				3AEEEB1320697EC700B91A2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AEEEAF720697EC700B91A2D /* Project object */;
+}
